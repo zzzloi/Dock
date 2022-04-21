@@ -1,0 +1,126 @@
+@media screen and (max-width: 1360px) {
+    .container {
+        width: 100%;
+    }
+
+    .about, .info, .blue {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .sale_block {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .main_block {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main_text {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .main_block img {
+        width: 100%;
+    }
+
+    .info_block {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header_menu {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    .header_menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, .5);
+    }
+
+    .header_menu.active ul {
+        flex-direction: column;
+        padding-left: 30px;
+    }
+
+    .header_menu.active li {
+        margin-bottom: 30px;
+    }
+
+    .header_menu.active a {
+        color: #fff;
+        font-size: 23px;
+    }
+    .about_block {
+        grid-template-columns: 1fr;
+    }
+    .about_item:first-child {
+        margin-bottom: 40px;    
+    }
+
+    .info_block {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_block {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .sale_block {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .info_block {
+        padding: 80px 20px;
+    }
+
+    .info_item {
+        padding: 32px 20px 70px 20px;
+    }
+
+    .info_item h2 {
+        font-size: 25px;
+    }
+
+    .about, .info {
+        padding: 0 20px;
+    }
+
+    .sale_block {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_block {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main_text h2 {
+        font-size: 30px;
+    }
+}
+
+
+
